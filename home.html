@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Shop</title>
+</head>
+<style>
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #aa941ab2;
+    color: #858684;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.shoe {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.shoe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shoe-info {
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    background-color: #db8a11;
+    color:#858684;
+    text-align: center;
+    padding: 1em 0;
+}
+</style>
+<body>
+
+    <header>
+        <h1>Shoe Shop</h1>
+    </header>
+
+    <section>
+        
+        
+    <img src="images/running.PNG" style="width: 20%; height: 20%; position: center; size: contain;">
+
+        <h3>running shoes
+            $150.99
+        </h3>
+            
+        <button onclick="addToCart(1)">Add to Cart</button>
+    
+        <img src="images\normal.PNG" style="width: 20%; height: 20%; position: center; size: contain">
+
+        <h3>Casual Shoe
+            $150.99
+        </h3>
+        
+        <button onclick="addToCart(2)">Add to Cart</button>
+    
+
+        <!-- Add more shoes as needed -->
+
+    </section>
+    
+
+    <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items">
+            <!-- Display items in the cart here -->
+        </ul>
+        <p>Total: <span id="cart-total">$0.00</span></p>
+
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="cart.js"></script>
+    <footer>
+        <p>&copy; contact info</p>
+        <p>phone number / whatsapp: 0777564545</p>
+        <p>email us at jhongibson00@gmail.com</p>
+    </footer>
+    
+ 
+</body>
+</html>

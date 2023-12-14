@@ -1,0 +1,51 @@
+.main-heading {
+    font-family: 'Concert one', cursive; 
+    font-size:4em; 
+    color: rgb(33, 73, 251); 
+    padding-top: 1em
+ }
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #aa941ab2;
+    color: #858684;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.shoe {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.shoe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shoe-info {
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    background-color: #db8a11;
+    color:#858684;
+    text-align: center;
+    padding: 1em 0;
+}
